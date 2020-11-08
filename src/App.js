@@ -3,6 +3,7 @@ import './App.css';
 import {Editor} from "./components/Editor";
 import {ProductTable} from "./components/ProductTable";
 import {EditorUncontrolled} from "./components/EditorUncontrolled";
+import {EditorCallback} from "./components/EditorCallback";
 
 export class App extends Component {
     constructor(props) {
@@ -27,6 +28,9 @@ export class App extends Component {
                     </div>
                     <div className="col">
                         <EditorUncontrolled callback={this.addProduct}/>
+                    </div>
+                    <div className="col">
+                        <EditorCallback callback={this.addProduct}/>
                     </div>
                 </div>
                 <div className="row">
